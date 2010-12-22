@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Auto Care</string>
+    <string name="initializing">Inicializando...</string>
+    <string name="insertingMake">Cadastrando Marcas...</string>
+    <string name="insertingModel">Cadastrando Modelos...</string>
+    <string name="sureExit">Tem certeza que deseja sair?</string>
+    <string name="quit">Sair</string>
+    <string name="back">Voltar</string>
+    <string name="help">Ajuda</string>
+    <string name="about">Sobre</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Cancelar</string>
+    <string name="add">Adicionar</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Apagar</string>
+    <string name="preferences">Configurações"</string>
+    <string name="type">Tipo</string>
+    <string name="description">Descrição</string>
+    <string name="vehicle">Veículo</string>
+    <string name="maintenance">Manutenção</string>
+    <string name="car">Carro</string>
+    <string name="bike">Moto</string>
+    <string name="truck">Caminhão</string>
+    
+    <string name="add_vehicle">Novo Veículo</string>
+    <string name="del_vehicle">Remover Veículo</string>
+    <string name="add_fuelfill">Novo Abastecimento</string>
+    
+    <string name="manufacturer">Marca</string>
+    <string name="model">Modelo</string>
+    <string name="year_model">Ano do Modelo</string>
+    <string name="year_make">Ano de Fabricação</string>
+    
+    <string name="fuelfill">Abastecimento</string>
+    <string name="alcohol">Álcool</string>
+    <string name="gasoline">Gasolina</string>
+    <string name="diesel">Diesel</string>
+    <string name="gas">Gás</string>
+    <string name="quantity">Quantidade</string>
+    <string name="price">Preço</string>
+    <string name="odometer">Odometro</string>
+    <string name="fulltank">Tanque Cheio</string>
+    <string name="newmark">Nova Marca</string>
+    
+    <string name="preventive">Preventiva</string>
+    <string name="corrective">Corretiva</string>
+    <string name="predictive">Preditiva</string>
+    
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<ImageView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:id="@+id/main_top_image"
+		android:src="@drawable/main_top"/>
+
+	<HorizontalScrollView 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/main_top_image"
+		android:id="@+id/scrollVehicles">
+		
+		<LinearLayout android:id="@+id/list_vehicles"
+			android:orientation="horizontal" 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			/>
+
+	</HorizontalScrollView>
+
+	<HorizontalScrollView 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/scrollActions">
+		
+		<LinearLayout android:id="@+id/list_actions"
+			android:orientation="horizontal" 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<ImageButton
+				android:id="@+id/button_add_car"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_launcher_2" />
+				
+			<ImageButton
+				android:id="@+id/button_add_car"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_launcher_2" />
+			
+			<ImageButton
+				android:id="@+id/button_add_car"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_launcher_2" />
+			
+		</LinearLayout>
+
+	</HorizontalScrollView>
+	<ViewFlipper
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/scrollVehicles"
+		android:layout_above="@id/scrollActions"
+		android:id="@+id/main_flipper">
+
+		<ScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical"
+				android:id="@+id/painel">
+
+			</LinearLayout>
+		</ScrollView>
+
+		<ListView android:id="@+id/list_maintenance"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"/>
+
+	</ViewFlipper>
+	
+
+</RelativeLayout>
