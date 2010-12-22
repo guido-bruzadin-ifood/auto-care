@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add_vehicle"
+          android:icon="@drawable/ic_tab_maintenance_white"
+          android:title="@string/add_vehicle" />
+    <item android:id="@+id/del_vehicle"
+          android:icon="@drawable/ic_tab_maintenance_white"
+          android:title="@string/del_vehicle" />
+    <item android:id="@+id/add_fuelfill"
+          android:icon="@drawable/ic_tab_maintenance_white"
+          android:title="@string/add_fuelfill" />
+    <item android:id="@+id/add_fuelfill"
+          android:icon="@drawable/ic_tab_maintenance_white"
+          android:title="@string/preferences" />
+    <item android:id="@+id/about"
+          android:icon="@drawable/ic_tab_maintenance_white"
+          android:title="@string/about" />
+    <item android:id="@+id/quit"
+          android:icon="@drawable/ic_tab_maintenance_white"
+          android:title="@string/quit" />
+</menu>

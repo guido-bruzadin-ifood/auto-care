@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="br.com.tribotech.autocare"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+	
+	<application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:name=".activity.SplashActivity"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.AddMaintenanceActivity" />
+
+		<receiver android:name=".widgets.FuelFillWidgetProvider" >
+		    <intent-filter>
+		        <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+		    </intent-filter>
+		    <meta-data android:name="android.appwidget.provider"
+		               android:resource="@xml/fuelfill_appwidget_info" />
+		</receiver>
+
+		<provider android:name="br.com.tribotech.autocare.providers.MaintenanceProvider"
+          	android:authorities="br.com.tribotech.autocare.providers.MaintenanceProvider" />
+		<provider android:name="br.com.tribotech.autocare.providers.VehicleProvider"
+          	android:authorities="br.com.tribotech.autocare.providers.VehicleProvider" />
+        <provider android:name="br.com.tribotech.autocare.providers.VehicleManufacturerProvider"
+          	android:authorities="br.com.tribotech.autocare.providers.VehicleManufacturerProvider" />
+        <provider android:name="br.com.tribotech.autocare.providers.VehicleModelProvider"
+          	android:authorities="br.com.tribotech.autocare.providers.VehicleModelProvider" />
+        <provider android:name="br.com.tribotech.autocare.providers.FuelFillProvider"
+          	android:authorities="br.com.tribotech.autocare.providers.FuelFillProvider" />
+		
+
+    </application>
+
+</manifest> 

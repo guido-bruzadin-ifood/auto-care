@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="5dp">
+
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<TextView 
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:padding="0dp" 
+			android:text="@string/type" />
+		<Spinner
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:paddingTop="2dp"
+			android:layout_marginLeft="5dp"
+			android:id="@+id/combo_types"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<TextView 
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:padding="0dp" 
+			android:text="@string/vehicle" />
+		<Spinner
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:paddingTop="2dp"
+			android:layout_marginLeft="5dp"
+			android:id="@+id/combo_vehicles"/>
+	</LinearLayout>
+
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView 
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:text="@string/quantity" />
+		<EditText
+			android:layout_width="60dp"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:layout_marginLeft="5dp"
+			android:id="@+id/quantity"
+			android:inputType="numberDecimal" />
+		<TextView 
+			android:layout_width="60dp"
+			android:layout_height="wrap_content"
+			android:text="@string/price" />
+		<EditText
+			android:layout_width="60dp"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:layout_marginLeft="5dp"
+			android:id="@+id/price"
+			android:inputType="numberDecimal" />
+	</LinearLayout>
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView 
+			android:layout_width="80dp"
+			android:layout_height="wrap_content" 
+			android:text="@string/odometer" />
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:singleLine="true"
+			android:id="@+id/odometer"
+			android:inputType="number" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView 
+			android:layout_width="80dp"
+			android:layout_height="wrap_content" 
+			android:text="@string/fulltank" />
+		<CheckBox
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:singleLine="true"
+			android:id="@+id/fulltank" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView 
+			android:layout_width="80dp"
+			android:layout_height="wrap_content" 
+			android:text="@string/newmark" />
+		<CheckBox
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:singleLine="true"
+			android:id="@+id/newmark" />
+	</LinearLayout>
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:gravity="center">
+		
+		<Button 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/ok"
+			android:id="@+id/OkButton" />
+		
+		<Button 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/cancel"
+			android:id="@+id/CancelButton"/>
+
+	</LinearLayout>
+</LinearLayout>
